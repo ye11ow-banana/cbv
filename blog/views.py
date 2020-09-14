@@ -24,3 +24,4 @@ class Blog(DetailView):
         context['categories'] = Category.objects.all()
         context['recent_posts'] = Blog.objects.all().order_by('-pub_date')
         return context
+# 
